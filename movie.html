@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ movie.title }}</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <h1>{{ movie.title }} ({{ movie.year }})</h1>
+    <p><strong>Genre:</strong> {{ movie.genre }}</p>
+    <p>{{ movie.description }}</p>
+    <a href="{{ movie.link }}" class="btn btn-success" target="_blank">Watch Movie</a>
+    <a href="/" class="btn btn-secondary">Back</a>
+</div>
+</body>
+</html>
